@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Evan Friedlan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			#herelink {
+				font-weight: bold;
+			}
+
+		</style>
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Evan Friedlan</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Clustering in R</h1>
+							<ul>
+								<li>Accessed a data set of customer purchasing habits at a winery. Included was demographic data of the customers and their spending habits at this store.</li>
+								<li>Cleaned data, removing unnecessary columns and bad entries.</li>
+								<li>Scaled dataset based on standardization.</li>
+								<li>Selected optimal number of clusters (2) using silhouette scores and elbow plot.</li>
+								<br>
+								<span class="image main"><img src="images/Elbow plot & silhouette scores.png" alt="" /></span>
+								<br>
+								<li>Utilized K-means clustering to segment, then employed fviz_cluster from the factoextra package to visualize the results.</li>
+								<br>
+								<span class="image img"><img src="images/Clusters.jpeg" alt="" /></span>	
+								<br>							
+								<li>Confirmed that the optimal number of clusters had been chosen with a silhouette plot.</li>
+								<br>
+								<span class="image img"><img src="images/Silhouette plot.png" alt="" /> </span>
+								<br>
+								<li>Separated data entries into the two clusters and plotted average and total values for each.</li>
+								<br>
+								<span class="image main"><img src="images/Clusters Barplots.png" alt="" /></span>
+								<br>
+								<li>The two clusters became customer segments for which a marketing plan was made to be recommended to the winery.</li>
+								<li>Created charts of purchasing channels and sales of each product category.</li>
+								<br>
+								<span class="image fit"><img src="images/Pie Charts Sales by Channel.png" alt="" /></span>
+								<br>
+							</ul>
+							<p>Full code can be found in github repository <a id="herelink" href="https://github.com/evanfriedlan/Clustering-Project-1.git">here</a></p >
+						</div>
+					</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li> Evan Friedlan</li><li> 2022 </li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

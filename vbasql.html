@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Evan Friedlan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#bolder {
+				font-weight: bold;
+
+			}
+
+			
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Evan Friedlan</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Database Application in VBA and SQL</h1>
+							<span class="image fit"><img src="images/Scenario.png" alt="" /></span>
+							<br>
+							<ul>
+								<li>For this project, the GUI and corresponding code was written in VBA. Student information was retrieved by reading provided .dat (a type of text) files and querying the provided Access database.</li>
+								<li>The GUI for the database system is a UserForm with several commands. For each, all output is being produced from VBA subroutines. Users are required only to enter a few lines information for some of the buttons (each button was required as part of the project).</li>
+								<br>
+								<span class="image img"><img src="images/Studentgui.png" alt="" /></span>
+								<br>
+								<br>
+								<li><a id="bolder">(2. Import import.dat) </a>User selects a list of students (import.dat) from the folder containing the Excel file. Results are output to a new worksheet in the workbook. </li>	
+								<br>
+								<span class="image img"><img src="images/2.png" alt="" /></span>
+								<br>
+								<br>
+								<li><a id="bolder">(3. Write enrolments.dat to Students.accdb) </a>User selects student enrolments (enrolments.dat) from the project folder. The enrolments are written to the Enrolments table of the database using SQL.</li>
+								<br>
+								<span class="image img"><img src="images/3.png" alt="" /></span>
+								<br>
+								<br>
+								<li><a id="bolder">(4. Display Student List from Students.accdb) </a>This button uses and SQL query to retrieve student information from the Students table of the database. The results are output to a new worksheet.</li>
+								<br>
+								<span class="image img"><img src="images/4.png" alt="" /></span>
+								<br>
+								<br>
+								<li><a id="bolder">(5. Store finalgrades.dat to array) </a>This button simply creates an array of strings from a given text file, in this case finalgrades.dat.</li>
+								<li><a id="bolder">(6a. Add new student to Student List Sheet) </a>User is prompted to enter information about a new student into a separate UserForm. The student will be added to the Student List from button 4. If the list does not already exist, it will be created and the student will still be added.</li>
+								<br>
+								<span class="image img"><img src="images/6a.png" alt="" /></span>
+								<br>
+								<br>
+								<li><a id="bolder">(6d. Find Students by City) </a>User is prompted to enter a city into a message box. The first and last names of every student in the database from the given city will be written to a new worksheet.</li>
+								<li><a id="bolder">(6e. Count Students by City) </a>If the only the number of students from a given city is required, this button will present a message box that has counted that value.</li>
+								<li><a id="bolder">(6f. Class Enrolments) </a>User is prompted to enter a course ID and term. Course information and number of students enrolled will be output to a new worksheet.</li>
+								<li><a id="bolder">(6g. How many students are from St. Jacobs?) </a>Similar to 6e, this button reveals the number of enrolled students from the city of St. Jacobs</li>
+								<li><a id="bolder">(7. Generate Grades Report) </a>User is prompted to enter a course ID and term. Course information will be output to a new worksheet, as well as student grades, if any exist. Light analysis of the grade data is calculated: class mean, median, mode, and standard deviation, as well as a bar chart representing the grade data.</li>
+								<br>
+								<span class="image img"><img src="images/7.png" alt="" /></span>
+
+							</ul>
+							<p>Full code can be found in github repository <a id="bolder" href="https://github.com/evanfriedlan/Clustering-Project-1.git">here</a></p >
+						
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li> Evan Friedlan</li><li> 2022 </li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
