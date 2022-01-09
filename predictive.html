@@ -26,9 +26,43 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Predictive Analysis in R</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>...</p>
+							The goal for this project was to build a predictive model that best forecast the results of the 2008 U.S. democratic primaries between Barack Obama and Hilary Clinton. 
+							<br>
+							<br>
+							<ul>
+								<li>Accessed extensive demographic data from the U.S. Census Bureau. For each of the ~2900 counties information on average income, land area, ethnicity breakdowns, etc., was provided.</li>
+								<li>Cleaned data set by imputing missing values and added category ObamaMarginPercent to show the victor in each county.</li>
+								<li>Split data into training and test sets. Counties that had already voted before the data was collected (Feb. 19, 2008) made up the training set. The training set was further split to create a validation set to check for overfitting and potentially biased data.</li>
+								<li>Created a correlation matrix using the training set to identify linked variables and those most associated with an Obama win.</li>
+								<br>
+								<span class="image img"><img src="images/corrmatrix.png" alt="" /></span>
+								<br>
+								<li>Generated multiple linear regression models with the target variable ObamaMarginPercent using the lm function. This was done to narrow down a model with the fewest and most significant variables that produce the highest R-squared value. </li>							
+								<li>Found highly correlated additional variables using the vif function (variable inflation factor) and removed to further specify the variables to be included. Five variables were included, however the variable for population density resulted in large outliers in counties like New York.</li>
+								<br>
+								<span class="image main"><img src="images/popdens.png" alt="" /> </span>
+								<br>
+								<li>The final model contained the four most predictive variables: region, poverty level, black population, and high school graduation level.</li>
+								<br>
+								<span class="image img"><img src="images/lmres.png" alt="" /> </span>
+								<br>
+								<li>Tested model training and test error to ensure generalizability. Found fairly high accuracy and low errors on both the training and validation data.</li>
+								<br>
+								<span class="image img"><img src="images/logiterror.png" alt="" /></span>
+								<br>
+								<li>Used the same four variables to create a logistic regression using the glm function. This model was found to be less predictive than the linear model.</li>
+								<li>Generated a regression tree using the rpart function. This model was also less predictive than the original linear model.</li>
+								<br>
+								<span class="image main"><img src="images/rpart.png" alt="" /></span>
+								<br>
+								<li>Ran the linear model on the unseen test data to predict primaries that had not yet taken place. The results of the prediction showed that Obama would lose in 770 of the upcoming 1131 primaries. These results can be attributed to the reduced rate of Black and high school graduated voters in the remaining counties.</li>
+								<br>
+								<span class="image img"><img src="images/final.png" alt="" /></span>
+								<br>
+							</ul>
+							<p>Full code can be found in github repository <a id="herelink" href="https://github.com/evanfriedlan/Clustering-Project-1.git">here</a></p >
 						</div>
+					</div>
 					</section>
 
 			</div>
