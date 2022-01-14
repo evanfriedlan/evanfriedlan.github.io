@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: rgb(255, 255, 255);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -115,7 +115,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(0, 0, 0, 0.55);
+		color: rgb(255, 255, 255);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #ffffff;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -197,10 +197,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #00315c, #33648f);
+				background-image: -webkit-linear-gradient(to right, #00315c, #33648f);
+				background-image: -ms-linear-gradient(to right, #00315c, #33648f);
+				background-image: linear-gradient(to right, #00315c, #33648f);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -1988,8 +1988,8 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		border: solid 1px rgba(255, 255, 255, 0.068);
+		background: rgba(109, 109, 109, 0.336);
 		margin: 0 0 2em 0;
 	}
 
@@ -2552,7 +2552,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #00315c;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -2572,6 +2572,7 @@ input, select, textarea {
 			border-radius: 0.25em;
 			display: block;
 			width: 60%;
+			
 		}
 
 		.image.left, .image.right {
@@ -3257,7 +3258,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #6e6e6e;
+			background-color: #505050;
 		}
 
 		.wrapper.style3-alt {
@@ -3419,7 +3420,7 @@ input, select, textarea {
 					}
 
 						#header > nav > ul > li a:hover {
-							color: rgba(255, 255, 255, 0.55);
+							color: rgba(255, 255, 255, 0.836);
 						}
 
 						#header > nav > ul > li a.active {
@@ -3858,7 +3859,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #ffffff;
 						}
 
 		}

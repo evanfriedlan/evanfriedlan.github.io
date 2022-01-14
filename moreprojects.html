@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
 		<style>
 			#bolder {
 				font-weight: bold;
@@ -16,23 +15,38 @@
 			#herelink {
 				font-weight: bold;
 			}
-			
+
 
 			body, input, select, textarea {
 				color: #313131;
 			}
 
-			h1, h2, h3, h4, h5, h6 {
+			h1, h2, h4, h5, h6 {
 				color: #000000;
 				font-weight: bold;
 				line-height: 1.5;
 				margin: 0 0 0.5em 0;
 			}
 
+			h3 {
+				color: #000000;
+				text-align: center;
+			}
 
+			#table { 
+				display:table; 
+				margin-left: auto;
+  				margin-right: auto;
+			}    
+
+			#table section { 
+				vertical-align:top; display:table-cell; 
+			}	
+
+			
 
 		</style>
-		
+
 	</head>
 	<body class="is-preload">
 
@@ -41,6 +55,7 @@
 				<a href="index.html" class="title">Evan Friedlan</a>
 				<nav>
 					<ul>
+						<li><a href="https://github.com/evanfriedlan">Github</a></li>
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</nav>
@@ -52,22 +67,36 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">GUI Interface in Java</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>...</p>
+							<h1 class="major">Projects</h1>
+								<section id="table">
+									<section>
+										<h2>GUI Interface in Java</h2>
+										<span class="image img"> <!-- <a href="java.html">--> <img  src="images/gui.png" alt="" /> </a></span>
+										<p>Creating a GUI of a menu to take food <br> orders at a restaurant using the libraries <br> Hashmap, NumberFormat, JFrame</p>
+									</section>
+									<section>
+										<h2>BSTs in Python</h2>
+										<span class="image img"> <!-- <a href="python.html">--> <img src="images/LetterCountPercentTable.png" alt="" /> </a></span>
+										<p>Coding a linked BST in python <br>to sort text from a .txt file</p>
+									</section>
+								</section>
+								<h3>New projects are added frequently. Check back soon!</h3>
 						</div>
+
 					</section>
+
+					
 
 			</div>
 
 		<!-- Footer -->
-		<footer id="footer" class="wrapper alt">
-			<div class="inner">
-				<ul class="menu">
-					<li> Evan Friedlan</li><li> 2022 </li>
-				</ul>
-			</div>
-		</footer>
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li> Evan Friedlan</li><li> 2022 </li>
+					</ul>
+				</div>
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
